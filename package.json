@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-emailer",
+  "version": "1.0.0",
+  "description": "API that sends emails using the Gmail API",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@googleapis/gmail": "^12.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimartinezabadias/nodejs-emailer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jimartinezabadias/nodejs-emailer/issues"
+  },
+  "homepage": "https://github.com/jimartinezabadias/nodejs-emailer#readme"
+}

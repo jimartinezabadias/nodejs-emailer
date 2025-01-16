@@ -1,0 +1,15 @@
+services:
+
+  node-emailer:
+    image: node:latest
+    container_name: node-emailer
+    working_dir: /usr/src/app
+    user: 1000:1000
+    # command: npm install @googleapis/gmail
+    command: npm run start
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/usr/src/app/credentials.json
